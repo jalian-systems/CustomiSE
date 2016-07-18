@@ -1,0 +1,30 @@
+eclipse {
+  jdt {
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+    javaRuntimeName = 'JavaSE-1.8'
+
+    file {
+      withProperties { properties ->
+        properties.setProperty('org.eclipse.jdt.core.compiler.problem.discouragedReference', 'ignore')
+        properties.setProperty('org.eclipse.jdt.core.compiler.problem.forbiddenReference', 'ignore')
+      }
+    }
+  }
+}
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+compileJava {
+	options.fork = true
+	if(project.properties['jdk8home'])
+		options.forkOptions*.executable = project.properties['jdk8home'] + '/bin/javac'
+}
+
+compileTestJava {
+	options.fork = true
+	if(project.properties['jdk8home'])
+		options.forkOptions*.executable = project.properties['jdk8home'] + '/bin/javac'
+}
+

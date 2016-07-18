@@ -1,0 +1,7 @@
+if(null == properties['jdk6home']) {
+  logger.warn("Marathon java-agent and java-recorder needs to be compiled with JDK6. Please set jdk6home property.")
+} else {
+  logger.info("Using " + properties['jdk6home'] + " for marathon-agent and marathon-recorder");
+}
+
+include 'calculator-agent', 'customiSE', 'fx-calculator', 'customiSE:JSON-java', 'customiSE:nanohttpd-2.1.1', 'fx-calculator-tests'
