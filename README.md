@@ -20,7 +20,7 @@ Your application understanding of how a Window should behave.
 
 Provides means of communicating with your application's components, like buttons, display etc.
 
-## Building Marathon
+## Building CustomiSE
 
 CustomiSE is built using [gradle](http://gradle.org). Just clone this repository and use the gradle wrapper in the toplevel folder to build CustomiSE.
 
@@ -34,7 +34,7 @@ C:\> .\gradlew build
 
 ## Using Eclipse
 
-Use the eclipse target to create eclipse projects for Marathon. Import the projects into a new workspace.
+Use the eclipse target to create eclipse projects for CustomiSE. Import the projects into a new workspace.
 
 ```
 $ ./gradlew eclipse
